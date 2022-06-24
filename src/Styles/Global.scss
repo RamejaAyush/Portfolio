@@ -8,6 +8,16 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  color: rgb(255, 255, 255);
+  background: rgb(156, 1, 1);
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(156, 1, 1);
+}
+
 body {
   font-family: var(--inter);
   color: var(--color);
@@ -17,18 +27,19 @@ body {
 :root {
   --background-color: #000;
   --color: #fff;
+  --border-color: #3b3b3b;
 
   //   fonts
   --inter: "Inter", sans-serif;
   --zen: "Zen Tokyo Zoo", cursive;
 
   //   weights
-  --bold: 800;
+  --bold: 500;
   --regular: 200;
 
   //   sizes
-  --small: 20px;
-  --medium: 22px;
-  --large: 28px;
+  --small: 15px;
+  --medium: 20px;
+  --large: 25px;
   --xl: 40px;
 }
