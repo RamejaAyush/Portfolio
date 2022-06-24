@@ -1,6 +1,9 @@
 import "../Styles/Home.scss";
 import Profile from "../Assests/profile.png";
-import "../Assests/arrow.svg";
+import Arrow from "../Assests/arrow.svg";
+import WorkBg from "../Assests/work.png";
+import DesignBg from "../Assests/design.png";
+import gallary from "../Assests/gallary.png";
 
 const Home = () => {
   return (
@@ -18,46 +21,54 @@ const Home = () => {
         <div className="profile">
           <div className="top-container">
             <div className="image">
-              {/* <img src={Profile} alt="Ayush Rameja" /> */}
+              <img src={Profile} alt="Ayush Rameja" />
             </div>
             <div className="description">
-              <p>
-                I Love to Create <span>Unique & Appealing</span> Websites.
+              <div className="headline">
+                <p>I Love to Create</p>
+                <p className="bold">Unique & Appealing</p>
+                <p>Websites.</p>
+              </div>
+              <p className="about">
+                a developer with a lot of
+                <span> Dedication and Creativity.</span>
               </p>
-              <p>a developer with a lot of Dedication and Creativity.</p>
             </div>
           </div>
           <div className="btn-container">
             <a href="#">
               <div className="btn">
                 <div className="background">
-                  <img src="#" alt="" />
+                  <img src={WorkBg} alt="" />
                 </div>
-                <h1>See Work</h1>
+                <p>See</p>
+                <p>Work</p>
                 <div className="arrow">
-                  <img src="#" alt="" />
+                  <img src={Arrow} alt="" />
                 </div>
               </div>
             </a>
             <a href="#">
               <div className="btn">
                 <div className="background">
-                  <img src="#" alt="" />
+                  <img src={DesignBg} alt="" />
                 </div>
-                <h1>See Work</h1>
+                <p>See</p>
+                <p>Designs</p>
                 <div className="arrow">
-                  <img src="#" alt="" />
+                  <img src={Arrow} alt="" />
                 </div>
               </div>
             </a>
             <a href="#">
               <div className="btn">
                 <div className="background">
-                  <img src="#" alt="" />
+                  <img src={gallary} alt="" />
                 </div>
-                <h1>See Work</h1>
+                <p>See</p>
+                <p>Gallary</p>
                 <div className="arrow">
-                  <img src="#" alt="" />
+                  <img src={Arrow} alt="" />
                 </div>
               </div>
             </a>
