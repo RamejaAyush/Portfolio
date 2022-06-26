@@ -1,9 +1,13 @@
 import Home from "./Components/Home";
+import Nav from "./Components/Nav";
 
 const App = () => {
   return (
     <div className="App">
-      <Home />
+      <>
+        <Nav />
+        <Home />
+      </>
     </div>
   );
 };

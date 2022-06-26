@@ -18,28 +18,31 @@
   background: rgb(156, 1, 1);
 }
 
-body {
-  font-family: var(--inter);
-  color: var(--color);
-  background-color: var(--background-color);
-}
-
 :root {
-  --background-color: #000;
-  --color: #fff;
-  --border-color: #3b3b3b;
-
-  //   fonts
   --inter: "Inter", sans-serif;
   --zen: "Zen Tokyo Zoo", cursive;
 
-  //   weights
-  --bold: 500;
-  --regular: 200;
+  --title: 40px;
+  --links: 16px;
+}
 
-  //   sizes
-  --small: 13px;
-  --medium: 18px;
-  --large: 22px;
-  --xl: 30px;
+body {
+  &.light {
+    --background-color: #f3eff5;
+    --primary: #ffffff;
+    --color: #000;
+    --border-color: #000000;
+  }
+
+  &.dark {
+    --background-color: #000;
+    --primary: #000000;
+    --color: #fff;
+    --border-color: #3b3b3b;
+  }
+
+  font-family: var(--inter);
+  color: var(--color);
+  background-color: var(--background-color);
+  padding: 0 15%;
 }
