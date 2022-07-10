@@ -27,22 +27,11 @@
 }
 
 body {
-  &.light {
-    --background-color: #f3eff5;
-    --primary: #ffffff;
-    --color: #000;
-    --border-color: #000000;
-  }
-
-  &.dark {
-    --background-color: #000;
-    --primary: #000000;
-    --color: #fff;
-    --border-color: #3b3b3b;
-  }
+  --background: #202020;
+  --color: #ffffff;
 
   font-family: var(--inter);
   color: var(--color);
-  background-color: var(--background-color);
-  padding: 0 15%;
+  background-color: var(--background);
+  padding: 0 5%;
 }
