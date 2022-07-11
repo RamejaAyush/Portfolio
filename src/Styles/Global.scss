@@ -21,13 +21,10 @@
 :root {
   --inter: "Inter", sans-serif;
   --zen: "Zen Tokyo Zoo", cursive;
-
-  --title: 40px;
-  --links: 16px;
 }
 
 body {
-  --background: #202020;
+  --background: #000000;
   --color: #ffffff;
 
   font-family: var(--inter);
