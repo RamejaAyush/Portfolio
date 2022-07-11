@@ -8,13 +8,13 @@ const Nav = () => {
       </div>
       <div className="nav-links">
         <a href="#">
-          <span data-hover="About">About</span>
+          <span data-hover="me :D">About</span>
         </a>
         <a href="#">
-          <span data-hover="Project">Projects</span>
+          <span data-hover="MyWork">Projects</span>
         </a>
         <a href="#">
-          <span data-hover="Designs">Designs</span>
+          <span data-hover="& more">Designs</span>
         </a>
         <a href="#">
           <span data-hover="Contact">Contact</span>

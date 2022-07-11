@@ -1,12 +1,17 @@
 import "../Styles/Home.scss";
+import { BsLinkedin } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 const Home = () => {
   return (
     <div className="Home-container">
-      <div className="profile-pic"></div>
-      <div className="welcome-message"></div>
-      <div className="Skills"></div>
-      <div className="about"></div>
+      <div className="left-side-info">
+        <BsLinkedin />
+        <BsTwitter />
+        <BsGithub />
+      </div>
+      <div className="right-side-info"></div>
     </div>
   );
 };

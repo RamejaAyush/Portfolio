@@ -50,13 +50,20 @@ nav {
           position: absolute;
           top: 110%;
           content: attr(data-hover);
-          transform: translate3d(0, 0, 0);
+          transform: rotate(42deg);
+          transition: all 250ms ease-in-out;
+          opacity: 0;
         }
       }
 
       &:hover {
         span {
           transform: translateY(-110%);
+
+          &::before {
+            transform: rotate(0deg);
+            opacity: 1;
+          }
         }
       }
     }
