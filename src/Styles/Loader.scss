@@ -1,0 +1,74 @@
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  .left-side,
+  .right-side {
+    width: 50%;
+    height: 100%;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    .header {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      align-items: center;
+      gap: 2vw;
+
+      .loader {
+        width: 5vw;
+        height: 5vw;
+      }
+
+      p {
+        font-size: 1.5vw;
+      }
+    }
+
+    .quote {
+      padding: 0 5%;
+      width: 100%;
+      height: 60%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 2vw;
+
+      h1 {
+        position: relative;
+        font-size: 3vw;
+
+        &::before {
+          position: absolute;
+          content: attr(data-text);
+          top: -15%;
+          left: -10%;
+          font-size: 5vw;
+        }
+      }
+
+      p {
+        font-size: 1.5vw;
+        font-style: italic;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .right-side {
+    display: grid;
+    place-items: center;
+
+    img {
+      width: 30vw;
+      height: 40vw;
+      object-fit: cover;
+    }
+  }
+}
