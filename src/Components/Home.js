@@ -3,6 +3,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import Profile from "../Media/Pro.png";
+import Arrow from "../Media/Arrow.svg";
 
 const Home = () => {
   return (
@@ -31,7 +32,30 @@ const Home = () => {
             <img src={Profile} alt="" />
           </div>
         </div>
-        <div className="desc"></div>
+        <div className="desc">
+          <div className="heading">
+            <p>I Love to create</p>
+            <a href="#">
+              <span data-hover="Or Maybe the Best :D">Unique & Appealing</span>
+            </a>
+            <p>Websites.</p>
+          </div>
+
+          <div className="aboutme">
+            Hi, I'm Ayush Rameja. A Web Developer at Accenture AI.
+          </div>
+
+          <div className="btns">
+            <a href="#">
+              <img src={Arrow} alt="" />
+              See Work
+            </a>
+            <a href="#">
+              <img src={Arrow} alt="" />
+              Contact
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

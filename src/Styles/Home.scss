@@ -93,6 +93,7 @@
   .center-content {
     width: 100%;
     height: 100%;
+    display: flex;
 
     .pro-container,
     .desc {
@@ -125,7 +126,7 @@
           width: 100%;
           height: 100%;
           background-color: #f3f3f329;
-          transform: translate(-1.75vw, 1.75vw);
+          transform: translate(-1.5vw, 1.5vw);
           transition: all 0.7s ease-in-out;
         }
 
@@ -133,6 +134,124 @@
           &::before {
             transform: translate(0, 0);
             background-color: var(--dim-color);
+          }
+        }
+      }
+    }
+
+    .desc {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 8%;
+
+      .heading {
+        font-size: 2.5vw;
+        color: var(--color);
+        transition: all 150ms ease-in-out;
+        line-height: 3.5vw;
+        p {
+          font-weight: 300;
+        }
+
+        a {
+          font-weight: 700;
+          position: relative;
+          z-index: 1;
+          display: flex;
+          overflow: hidden;
+          text-decoration: none;
+          color: var(--color);
+
+          span {
+            position: relative;
+            transition: all 250ms ease-in-out;
+
+            &::after {
+              z-index: -1;
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              height: 2vh;
+              background-color: #3c3c3c;
+            }
+
+            &::before {
+              width: 50vw;
+              color: var(--color);
+              position: absolute;
+              top: 110%;
+              content: attr(data-hover);
+              transition: all 250ms ease-in-out;
+              opacity: 0;
+            }
+          }
+
+          &:hover {
+            span {
+              transform: translateY(-110%);
+
+              &::before {
+                transform: rotate(0deg);
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      .aboutme {
+        font-size: 1.5vw;
+        color: var(--dim-color);
+        transition: all 150ms ease-in-out;
+        line-height: 2.5vw;
+      }
+
+      .btns {
+        display: flex;
+        gap: 5vw;
+
+        a {
+          position: relative;
+          display: flex;
+          gap: 1vw;
+          padding: 0.75vw;
+          font-weight: 700;
+          font-size: 1.25vw;
+          text-decoration: none;
+          color: var(--color);
+          transition: all 150ms ease-in-out;
+
+          img {
+            transform: scale(0.7);
+          }
+
+          &::before {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            left: 5%;
+            bottom: 35%;
+            width: 1vw;
+            height: 1vw;
+            border-radius: 50%;
+            background-color: #3c3c3c;
+            transition: all 250ms ease-in-out;
+          }
+
+          &:hover {
+            &::before {
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: 5px;
+              background-color: #222222;
+            }
           }
         }
       }
