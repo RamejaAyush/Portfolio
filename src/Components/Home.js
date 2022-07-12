@@ -2,6 +2,7 @@ import "../Styles/Home.scss";
 import { BsLinkedin } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
+import Profile from "../Media/Pro.png";
 
 const Home = () => {
   return (
@@ -23,6 +24,14 @@ const Home = () => {
       <div className="right-side-info">
         <div className="line"></div>
         <a href="mailto:ayushrameja@gmail.com">ayushrameja@gmail.com</a>
+      </div>
+      <div className="center-content">
+        <div className="pro-container">
+          <div className="img">
+            <img src={Profile} alt="" />
+          </div>
+        </div>
+        <div className="desc"></div>
       </div>
     </div>
   );
