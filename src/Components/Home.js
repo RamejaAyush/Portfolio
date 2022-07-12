@@ -1,84 +1,59 @@
 import "../Styles/Home.scss";
-import Profile from "../Assests/profile.png";
-import Arrow from "../Assests/arrow.svg";
-import WorkBg from "../Assests/work.png";
-import DesignBg from "../Assests/design.png";
-import gallary from "../Assests/gallary.png";
+import { BsLinkedin } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+import Profile from "../Media/Pro.png";
+import Arrow from "../Media/Arrow.svg";
 
 const Home = () => {
   return (
-    <div className="Home-container">
-      <div className="home-header">
-        <div className="designation">
-          <h1>Ayush Rameja</h1>
-          <p>Web Developer at Accenture</p>
-        </div>
-        <div className="logo">
-          <p>AXU</p>
+    <div className="home-container">
+      <div className="left-side-info">
+        <div className="line"></div>
+        <div className="links">
+          <a href="#">
+            <BsLinkedin className="link" />
+          </a>
+          <a href="#">
+            <BsTwitter className="link" />
+          </a>
+          <a href="#">
+            <BsGithub className="link" />
+          </a>
         </div>
       </div>
-      <div className="main-section">
-        <div className="profile">
-          <div className="top-container">
-            <div className="image">
-              <img src={Profile} alt="Ayush Rameja" />
-            </div>
-            <div className="description">
-              <div className="headline">
-                <p>I Love to Create</p>
-                <p className="bold">Unique & Appealing</p>
-                <p>Websites.</p>
-              </div>
-              <p className="about">
-                a developer with a lot of
-                <span> Dedication and Creativity.</span>
-              </p>
-            </div>
-          </div>
-          <div className="btn-container">
-            <a href="#">
-              <div className="btn">
-                <div className="background">
-                  <img src={WorkBg} alt="" />
-                </div>
-                <p>See</p>
-                <p>Work</p>
-                <div className="arrow">
-                  <img src={Arrow} alt="" />
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div className="btn">
-                <div className="background">
-                  <img src={DesignBg} alt="" />
-                </div>
-                <p>See</p>
-                <p>Designs</p>
-                <div className="arrow">
-                  <img src={Arrow} alt="" />
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div className="btn">
-                <div className="background">
-                  <img src={gallary} alt="" />
-                </div>
-                <p>See</p>
-                <p>Gallary</p>
-                <div className="arrow">
-                  <img src={Arrow} alt="" />
-                </div>
-              </div>
-            </a>
+      <div className="right-side-info">
+        <div className="line"></div>
+        <a href="mailto:ayushrameja@gmail.com">ayushrameja@gmail.com</a>
+      </div>
+      <div className="center-content">
+        <div className="pro-container">
+          <div className="img">
+            <img src={Profile} alt="" />
           </div>
         </div>
-        <div className="skills">
-          <div className="skills-container">
-            <div className="header">
-              <p>Skills</p>
-            </div>
+        <div className="desc">
+          <div className="heading">
+            <p>I Love to create</p>
+            <a href="#">
+              <span data-hover="Or Maybe the Best :D">Unique & Appealing</span>
+            </a>
+            <p>Websites.</p>
+          </div>
+
+          <div className="aboutme">
+            Hi, I'm Ayush Rameja. A Web Developer at Accenture AI.
+          </div>
+
+          <div className="btns">
+            <a href="#">
+              <img src={Arrow} alt="" />
+              See Work
+            </a>
+            <a href="#">
+              <img src={Arrow} alt="" />
+              Contact
+            </a>
           </div>
         </div>
       </div>
