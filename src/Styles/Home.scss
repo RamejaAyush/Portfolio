@@ -1,1 +1,92 @@
 @import url(./Global.scss);
+
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+
+  .left-side-info {
+    position: absolute;
+    left: -5%;
+    bottom: 0;
+    gap: 5%;
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 25%;
+      transition: all 150ms ease-in-out;
+
+      a {
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: var(--dim-color);
+        transition: all 150ms ease-in-out;
+      }
+    }
+
+    &:hover {
+      gap: 8%;
+
+      .links {
+        height: 30%;
+
+        a {
+          color: var(--color);
+          font-style: normal;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .right-side-info {
+    position: absolute;
+    right: -5%;
+    bottom: 0;
+    gap: 30%;
+
+    a {
+      font-size: 1.25vw;
+      position: relative;
+      transform: rotate(-90deg);
+      text-decoration: none;
+      color: var(--dim-color);
+      transition: all 150ms ease-in-out;
+    }
+
+    &:hover {
+      gap: 32%;
+
+      a {
+        color: var(--color);
+        font-style: normal;
+      }
+    }
+  }
+
+  .left-side-info,
+  .right-side-info {
+    height: 70%;
+    width: 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      .line {
+        background-color: var(--color);
+      }
+    }
+
+    .line {
+      position: relative;
+      height: 15%;
+      width: 1px;
+      background-color: var(--dim-color);
+    }
+  }
+}

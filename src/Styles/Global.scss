@@ -10,12 +10,12 @@
 
 ::-moz-selection {
   color: rgb(255, 255, 255);
-  background: rgb(156, 1, 1);
+  background: rgb(1, 133, 156);
 }
 
 ::selection {
   color: rgb(255, 255, 255);
-  background: rgb(156, 1, 1);
+  background: rgb(1, 133, 156);
 }
 
 :root {
@@ -26,6 +26,7 @@
 body {
   --background: #000000;
   --color: #ffffff;
+  --dim-color: #818181;
 
   font-family: var(--inter);
   color: var(--color);
