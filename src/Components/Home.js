@@ -49,11 +49,11 @@ const Home = () => {
           <div className="desc">
             <div className="heading">
               <p>I Love to create</p>
-              <a href="#">
+              <p className="main" href="#">
                 <span data-hover="Or Maybe the Best :D">
                   Unique & Appealing
                 </span>
-              </a>
+              </p>
               <p>Websites.</p>
             </div>
 
