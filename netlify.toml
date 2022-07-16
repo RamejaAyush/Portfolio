@@ -1,4 +1,4 @@
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/home"
+  to = "ayushrameja.com"
   status = 200
