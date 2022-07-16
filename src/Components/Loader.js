@@ -37,8 +37,7 @@ const Loader = () => {
             variants={loaderAnimation}
             exit="exit"
             transition={{ duration: 1 }}
-            className="header"
-          >
+            className="header">
             <svg
               className="loader"
               version="1.1"
@@ -49,8 +48,7 @@ const Loader = () => {
               y="0px"
               viewBox="0 0 100 100"
               enable-background="new 0 0 100 100"
-              xmlSpace="preserve"
-            >
+              xmlSpace="preserve">
               <circle
                 fill="none"
                 stroke="#fff"
@@ -59,8 +57,7 @@ const Loader = () => {
                 stroke-dasharray="14.2472,14.2472"
                 cx="50"
                 cy="50"
-                r="47"
-              >
+                r="47">
                 <animateTransform
                   attributeName="transform"
                   attributeType="XML"
@@ -79,8 +76,7 @@ const Loader = () => {
                 stroke-dasharray="10,10"
                 cx="50"
                 cy="50"
-                r="39"
-              >
+                r="39">
                 <animateTransform
                   attributeName="transform"
                   attributeType="XML"
@@ -152,10 +148,9 @@ const Loader = () => {
             animate="animate"
             exit="exit"
             transition={{ duration: 1 }}
-            className="quote"
-          >
-            <motion.h1 data-text="❝">{randomQuote}</motion.h1>
-            <p>• have a Positive Day my friend</p>
+            className="quote">
+            <motion.h1>{randomQuote}</motion.h1>
+            <p>• have a Nice Day :D</p>
           </motion.div>
         </div>
         <div className="right-side">
